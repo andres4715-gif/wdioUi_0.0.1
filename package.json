@@ -1,7 +1,7 @@
 {
   "name": "newwebdriverio",
   "version": "1.0.0",
-  "description": "firstTestZemoga",
+  "description": "firstTest",
   "main": "index.js",
   "directories": {
     "test": "src/test"
@@ -10,12 +10,7 @@
     "build:watch": "tsc -w",
     "test": "npx wdio run config/wdio.conf.ts",
     "chrome": "npx wdio run config/wdio.conf.ts --spec",
-    "firefox": "npx wdio run config/wdio.conf.firefox.ts --spec",
-    "safari": "npx wdio run config/wdio.conf.safari.ts --spec",
-    "appium.android.browser": "npx wdio run config/wdio.android.browser.emulator.conf.ts --spec",
-    "appium.browser.android.pixel3.realDevice": "npx wdio run config/wdio.conf.android.app.realDevice.pixel.ts --spec",
-    "appium.android.app": "npx wdio run config/wdio.conf.android.app.ts --spec",
-    "appium.ios.app": "npx wdio run config/wdio.conf.ios.app.ts --spec"
+    "firefox": "npx wdio run config/wdio.conf.firefox.ts --spec"
   },
   "author": "AndresRios",
   "license": "ISC",
