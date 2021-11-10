@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "outDir": "./.tsbuild/",
+      "sourceMap": false,
+      "target": "es2019",
+      "module": "CommonJS",
+      "removeComments": true,
+      "noImplicitAny": true,
+      "esModuleInterop": true,
+      "strictPropertyInitialization": true,
+      "strictNullChecks": true,
+      "resolveJsonModule": true,
+      "skipLibCheck": true,
+      "types": [
+        "node",
+        "webdriverio/sync",
+        "@wdio/jasmine-framework",
+      ],
+
+    },
+    "include": [
+      "./src/test/**/*.ts",
+      "../../../../Library/Caches/JetBrains/WebStorm2021.1/javascript/typings/chai/4.2.18/node_modules/@types/chai/index.d.ts",
+      "node_modules/webdriverio/sync.d.ts"
+    ],
+  "exclude": [
+    "node_modules",
+    "reports"
+  ]
+}

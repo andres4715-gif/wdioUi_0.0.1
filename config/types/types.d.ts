@@ -1,0 +1,1 @@
+export type WDIOType = { [x: string] : any }
