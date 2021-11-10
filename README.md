@@ -232,6 +232,3 @@ In another terminal you can run this command line:
 ```shell
 $ npm run appium.android
 ```
-
-new changes after some thought
-
