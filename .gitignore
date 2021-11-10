@@ -6,7 +6,6 @@
 # Node artifact files
 node_modules/
 dist/
-drivers
 allure-results
 allure-report
 node_modules
