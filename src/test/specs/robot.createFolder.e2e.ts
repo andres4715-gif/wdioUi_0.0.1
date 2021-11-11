@@ -1,5 +1,6 @@
 import LoginCommands from '../commands/login.commands';
 import ExploresArea from '../pageobjects/robot.explorer.area';
+
 let expect = require('chai').expect;
 
 describe('Create a new folder, delete this folder and log out on the web page', () => {

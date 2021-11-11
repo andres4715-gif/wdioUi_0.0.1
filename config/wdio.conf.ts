@@ -25,8 +25,8 @@ exports.config = {
     //
     specs: [
         // '.tsbuild/specs/**/*.js',
-        // '.tsbuild/specs/robot.createFolder.e2e.js',
-         '.tsbuild/specs/robot.interact.elements.js',
+        '.tsbuild/specs/robot.createFolder.e2e.js',
+        // '.tsbuild/specs/robot.interact.elements.js',
         // '.tsbuild/specs/the-internet.login.js'
 
     ],
