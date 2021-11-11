@@ -1,22 +1,13 @@
-// Just some examples
+var assert = require('chai').assert;
 
 /**
- * Get the time difference in seconds
- * @param {number} start    the time in milliseconds
- * @param {number} end      the time in milliseconds
+ * Get value and compare if this is a expected text
+ * @param selector
+ * @param expectedText
+ * @param element
  */
-export function timeDifference (start: number, end: number) {
-    const elapsed = (end - start) / 1000;
-    console.log('elapsed = ', elapsed, ' seconds');
-}
-
-/**
- * Get a email with ramdom value
- * @param min
- * @param max
- * @constructor
- */
-export function Emailrandom (min: number, max: number) {
-    const random = min + Math.floor((max - min) * Math.random());
-    return ('wdioauto' + random + '@loquesea.com');
+export function getValueAndCompareContent(selector: any, expectedText: string, element: string): void {
+    let labelValue: string = '';
+    labelValue = $(selector).getText();
+    assert.include(labelValue, expectedText, `Check the ${element} because it was not displayed`);
 }
