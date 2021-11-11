@@ -6,7 +6,7 @@ class robotLoginCommand {
         LoginPage.openUrl();
         LoginPage.inputCredentials(
             'nazlyavilachica@gmail.com',
-            'aquenoloadivines123*')
+            'aquenoloadivines123*');
     }
 }
 

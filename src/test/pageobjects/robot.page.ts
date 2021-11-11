@@ -2,7 +2,7 @@
  * main page object containing all methods, selectors and functionality
  * that is shared across all page objects
  */
-class Robot {
+class RobotPage {
     /**
      * Opens a sub page of the page
      * @param path path of the sub page (e.g. /path/to/page.html)
@@ -12,4 +12,4 @@ class Robot {
     }
 }
 
-export default Robot;
+export default RobotPage;

@@ -1,4 +1,4 @@
-import Robot from './robot';
+import RobotPage from './robot.page';
 
 const SELECTORS = {
     IMPUT_TITLE: '[name="01___title"]',
@@ -16,7 +16,7 @@ const SELECTORS = {
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class FillForm extends Robot {
+class FillForm extends RobotPage {
     /**
      * define selectors using getter methods
      */

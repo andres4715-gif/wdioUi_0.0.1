@@ -1,5 +1,5 @@
 import LoginCommands from '../commands/login.commands';
-import ExploresArea from '../pageobjects/robot.explorer.area';
+import ExploresArea from '../pageobjects/robot.explorer.area.page';
 
 let expect = require('chai').expect;
 
