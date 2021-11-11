@@ -1,18 +1,18 @@
 import FillRoboForm from '../pageobjects/robot.form.page';
 import allureReporter from '@wdio/allure-reporter'
-import { WDIOType } from '../../../config/types/types'
+import {WDIOType} from '../../../config/types/types'
 
 describe('Interact with elements on the web page', () => {
     // $$
     it('should can interact getting an element from a list', () => {
-        FillRoboForm.open();   
+        FillRoboForm.open();
         FillRoboForm.getElemetFromList();
     });
 
     it('should clear a value', () => {
         browser.takeScreenshot();
         allureReporter.addSeverity('critical')
-        FillRoboForm.open(); 
+        FillRoboForm.open();
         FillRoboForm.checkClearValues('Doctor');
     });
 
@@ -41,6 +41,6 @@ describe('Interact with elements on the web page', () => {
     });
 
     it('should copy value in the field', () => {
-        FillRoboForm.checkSetValue('Seventh Avenue ', 'north of Central Park', 'New York City' );
+        FillRoboForm.checkSetValue('Seventh Avenue ', 'north of Central Park', 'New York City');
     });
 })
