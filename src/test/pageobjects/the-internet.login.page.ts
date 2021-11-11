@@ -13,19 +13,19 @@ class TheInternetLoginPage {
      * define selectors using getter methods
      */
     get greenLoggedSecureArea() {
-        return $(SELECTORS.GREEN_LOGGED_SECURE_AREA)
+        return $(SELECTORS.GREEN_LOGGED_SECURE_AREA);
     }
 
     get inputUserName() {
-        return $(SELECTORS.INPUT_USER_NAME)
+        return $(SELECTORS.INPUT_USER_NAME);
     }
 
     get inputPassword() {
-        return $(SELECTORS.INPUT_PASSWORD)
+        return $(SELECTORS.INPUT_PASSWORD);
     }
 
     get submit() {
-        return $(SELECTORS.SUBMIT)
+        return $(SELECTORS.SUBMIT);
     }
 
     inputUserNameEntry(username: string) {
@@ -41,8 +41,8 @@ class TheInternetLoginPage {
     }
 
     getTextRedMessage() {
-        let hola = this.greenLoggedSecureArea.getText();
-        return hola;
+        let gettingMessage = this.greenLoggedSecureArea.getText();
+        return gettingMessage;
     }
 }
 
