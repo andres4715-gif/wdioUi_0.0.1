@@ -25,10 +25,10 @@ exports.config = {
     //
     specs: [
         // '.tsbuild/specs/**/*.js',
-        '.tsbuild/specs/robot.createFolder.e2e.js',
-        // '.tsbuild/specs/robot.interact.elements.js',
-        // '.tsbuild/specs/the-internet.login.js'
-
+        // '.tsbuild/specs/robot.createFolder.e2e.test.js',
+        // '.tsbuild/specs/robot.interact.elements.test.js',
+        // '.tsbuild/specs/the-internet.login.test.js',
+        '.tsbuild/specs/yourLogo.purchase.test.js'
     ],
     // Patterns to exclude.
     exclude: [
