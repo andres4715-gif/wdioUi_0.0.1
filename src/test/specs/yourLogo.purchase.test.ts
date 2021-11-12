@@ -10,5 +10,6 @@ describe('Get some products to buy something', () => {
     it('should be able open a contact us form', () => {
         HomePage.clickContactUs();
         ContactUsPage.getTitleAndCompare()
+        ContactUsPage.getSendMessageAndCompare()
     });
 })
