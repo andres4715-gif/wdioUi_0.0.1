@@ -14,6 +14,10 @@ class OpenPagePage {
     openYourLogoPage() {
         return browser.url('http://automationpractice.com/index.php');
     }
+
+    openGoogleSearchF1Results() {
+        return browser.url('https://www.google.com/');
+    }
 }
 
 export default OpenPagePage;
