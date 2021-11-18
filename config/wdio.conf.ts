@@ -29,7 +29,8 @@ exports.config = {
         // '.tsbuild/specs/robot.interact.elements.test.js',
         // '.tsbuild/specs/the-internet.login.test.js',
         // '.tsbuild/specs/yourLogo.purchase.test.js'
-        '.tsbuild/specs/google.f1.test.js'
+        // '.tsbuild/specs/google.f1.test.js'
+        '.tsbuild/specs/robot.interact.elements.dropdown.test.js'
     ],
     // Patterns to exclude.
     exclude: [

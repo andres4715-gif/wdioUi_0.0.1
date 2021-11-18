@@ -1,4 +1,10 @@
 import OpenPagePage from './openPage.page';
+import {
+    checkIfElementIsDisplayedGenericElement, chooseElementByDopDownGenericElement,
+    clearTextGenericValue,
+    clickGenericValue,
+    inputGenericValue, scrollIntoViewGenericElement, waitForDisplayedGenericElement
+} from "../helpers/utils";
 
 const SELECTORS = {
     IMPUT_TITLE: '[name="01___title"]',
@@ -11,6 +17,11 @@ const SELECTORS = {
     INPUT_ADDRESS: '[name="10address1"]',
     INPUT_ADDRESS_2: '//*[@name="11address2"]',
     INPUT_CITY: '//*[@name="13adr_city"]',
+    FULL_NAME: '[name="04fullname"]',
+    BUY_NOW_BUTTON: '[id="dlbtn"]',
+    CAR_EXPIRATION_DATE_MONTH: '[name="42ccexp_mm"]',
+    SELECT_CREDIT_CARD_TYPE: '[name="40cc__type"]',
+    ENGLISH_BUTTON: '[id="picklangcurrent"]'
 }
 
 /**
@@ -26,6 +37,26 @@ class FillForm extends OpenPagePage {
 
     get element() {
         return $(SELECTORS.ELEMENT);
+    }
+
+    get fullName() {
+        return $(SELECTORS.FULL_NAME);
+    }
+
+    get buyNowButton() {
+        return $(SELECTORS.BUY_NOW_BUTTON);
+    }
+
+    get carExpirationDateMonth() {
+        return $(SELECTORS.CAR_EXPIRATION_DATE_MONTH);
+    }
+
+    get selectCredicardType() {
+        return $(SELECTORS.SELECT_CREDIT_CARD_TYPE);
+    }
+
+    get EnglishButton() {
+        return $(SELECTORS.ENGLISH_BUTTON);
     }
 
     get forBusiness() {
@@ -93,6 +124,38 @@ class FillForm extends OpenPagePage {
         browser.pause(1000);
         this.inputTitle.clearValue();
         browser.pause(1000);
+    }
+
+    setTitleRoboForm(title: string) {
+        inputGenericValue(this.inputTitle, title);
+    }
+
+    clearTitleValue() {
+        clearTextGenericValue(this.inputTitle);
+    }
+
+    clickFullName() {
+        clickGenericValue(this.fullName);
+    }
+
+    checkIfBuyNowButtonIsDisplayed() {
+        checkIfElementIsDisplayedGenericElement(this.buyNowButton, 'buy now button');
+    }
+
+    chooseCarExpirationDateMonth(optionlist: string) {
+        chooseElementByDopDownGenericElement(this.carExpirationDateMonth, optionlist);
+    }
+
+    selectCreditCardType(optionlist: string) {
+        chooseElementByDopDownGenericElement(this.selectCredicardType, optionlist);
+    }
+
+    scrollEnglishButton() {
+        scrollIntoViewGenericElement(this.EnglishButton);
+    }
+
+    waitUntilTheEnglishButtonIsDisplayed() {
+        waitForDisplayedGenericElement(this.EnglishButton);
     }
 
     /**
