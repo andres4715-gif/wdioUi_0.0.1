@@ -10,7 +10,7 @@ allure-results
 allure-report
 node_modules
 .tsbuild
-.png
+screenShots
 
 # Compiled Java class files
 *.class
