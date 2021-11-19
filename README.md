@@ -102,3 +102,5 @@ steps:
 $ allure generate reports/allure/allure-results/ --clean && allure open
 ```
 - You can check more information about Allure report in this confluence page:
+
+change1
